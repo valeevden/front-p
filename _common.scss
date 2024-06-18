@@ -3,7 +3,16 @@
 	box-sizing: border-box;
 }
 
+body {
+	max-width: 1440px;
+	padding-left: 80px;
+	background-color: rgb(221, 231, 233);
+}
+
 .container {
 	max-width: 1280px;
-	margin: 0 auto;
+}
+
+.flex {
+	display: flex;
 }
