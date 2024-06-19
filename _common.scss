@@ -3,16 +3,32 @@
 	box-sizing: border-box;
 }
 
-body {
+$main-font: "Open Sans", sans-serif;
+
+/* body {
 	max-width: 1440px;
 	padding-left: 80px;
 	background-color: rgb(221, 231, 233);
-}
+} */
 
 .container {
-	max-width: 1280px;
+	max-width: 1440px;
+	padding: 0 80px;
+	font-family: $main-font
 }
 
 .flex {
 	display: flex;
+}
+
+.cut-border {
+	border-radius: 8px;
+	border-width: 1px;
+	border-color: rgb(232, 232, 232);
+}
+
+@media (width > 1400px) {
+	.container {
+		width: 1440px;
+	}
 }

@@ -1,43 +1,105 @@
 @import "common";
 
 $temp-color: greenyellow;
+$blue-color: rgb(55, 113, 200);
 
 section {
-	width: 1280px;
+	max-width: 1280px;
 	//width: 100%;
 }
 
 #best-hotels {
 	background-color: antiquewhite;
-	height: 736px;
+	//height: 736px;
 
 	h1 {
 		color: rgb(0, 0, 0);
-		font-family: Open Sans;
 		font-size: 40px;
 		font-weight: 600;
 		line-height: 60px;
 	}
 
+	h3 {
+		white-space: nowrap; /* Текст не переносится */
+		overflow: hidden; /* Обрезаем всё за пределами блока */
+		text-overflow: ellipsis; /* Добавляем многоточие */
+		padding-bottom: 8px;
+		color: rgb(34, 34, 34);
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 30px;
+	}
+
 	p {
 		color: rgb(85, 85, 85);
-		font-family: Open Sans;
-		font-size: 16px;
-		font-weight: 400;
 		line-height: 28px;
 	}
 
 	.button-bar {
 		justify-content: space-between;
-	}
-	.cards-box {
-		row-gap: 10px;
+		padding: 20px 0;
 	}
 
-	.card1,
-	.card2,
-	.card3 {
-		//width: 33%;
-		background-color: $temp-color;
+	.buttons {
+		width: 60%;
+		gap: 40px;
 	}
+
+	button:not(.filled-button) {
+		padding: 8px 28px;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		background-color: transparent;
+		border-radius: 8px;
+		border-width: 1px;
+		border-color: rgb(232, 232, 232);
+	}
+
+	.cards-box {
+		justify-content: space-between;
+		padding-top: 20px;
+	}
+
+	.card {
+		width: 33%;
+		border: 1px solid rgb(232, 232, 232);
+		border-radius: 16px;
+	}
+	.desc-box {
+		padding: 20px;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	.desc {
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 24px;
+	}
+
+	.price-bar {
+		padding-top: 20px;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.price {
+		color: $blue-color;
+		font-weight: 600;
+		font-size: 24px;
+	}
+
+	.filled-button {
+		padding: 5px 15px;
+		border-radius: 4px;
+		color: white;
+		background-color: $blue-color;
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 20px;
+	}
+
 }
