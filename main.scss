@@ -34,6 +34,63 @@ header {
   }
 }
 
+#hero-section {
+
+  .text {
+    //margin-right: 134px
+    padding-right: 134px
+  }
+  .title {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 80px;
+  }
+
+  .title-desc {
+    margin-top: 30px;
+    padding-right: 170px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+
+  .calendar-box {
+    display: grid;
+    width: 500px;
+    padding: 50px 20px;
+    column-gap: 24px;
+    row-gap: 20px;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+
+    border-radius: 20px;
+    background: white;
+  }
+
+  .dates
+  .persons {
+    width: 218px;
+  }
+
+  .location {
+    justify-content: start;
+    grid-column: span 2;
+  }
+
+  .image-box {
+    margin-top: 40px;
+    gap: 16px;
+  }
+
+  .small-images {
+    flex-direction: column;
+  }
+
+  // .main-img {
+  //   flex-basis: 90%;
+  // }
+}
+
 #best-hotels {
   background-color: antiquewhite;
 
@@ -155,14 +212,18 @@ header {
 
   .button-box {
     margin-right: 50px;
-    align-items: center;
     background-color: white;
     border-radius: 50px;
   }
 
+  .email-input {
+    flex-grow: 1;
+  }
+
   .subscribe-input {
+    flex-grow: 1;
     border: none;
-    padding: 14px 26px;
+    padding: 14px 0px 14px 26px;
     border-radius: 30px 0 0 30px;
     font-size: 16px;
   }
