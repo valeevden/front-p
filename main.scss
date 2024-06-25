@@ -1,46 +1,45 @@
 @import "common";
 
+
 section {
   max-width: 1280px;
   margin: 60px 80px;
-  //width: 100%;
-}
-
-header {
-  max-width: 1280px;
-  margin: 40px 80px;
-  align-items: center;
-}
-
-.nav-box {
-  align-items: center;
-  gap: 40px;
-  font-family: $main-font;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  cursor: pointer;
-
-  .nav-link {
-    text-decoration: none;
   }
 
-  .button {
-    text-decoration: none;
-    padding: 10px 24px;
-    border: none;
-    border: 1px solid rgb(153, 153, 153);
-    border-radius: 35px;
-  }
-}
+  header {
+    max-width: 1280px;
+    margin: 40px 80px;
+    align-items: center;
+    }
+
+    .nav-box {
+      align-items: center;
+      gap: 40px;
+      font-family: $main-font;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      cursor: pointer;
+
+      .nav-link {
+        text-decoration: none;
+        }
+
+        .button {
+          text-decoration: none;
+          padding: 10px 24px;
+          border: none;
+          border: 1px solid rgb(153, 153, 153);
+          border-radius: 35px;
+          }
+          }
 
 #hero-section {
 
-  .text {
-    //margin-right: 134px
-    padding-right: 134px
-  }
+  --gray-color: #f9f9f9;
+
   .title {
+    width: 646px;
     font-size: 60px;
     font-weight: 600;
     line-height: 80px;
@@ -65,16 +64,51 @@ header {
 
     border-radius: 20px;
     background: white;
+
+    img {
+      margin-right: 4px;
+    }
   }
 
-  .dates
-  .persons {
-    width: 218px;
+  .input-fonts-border {
+    color: rgb(34, 34, 34);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    border: none
   }
+
+  .dates {
+    background-color: var(--gray-color);
+    padding: 10px 15px;
+    border-radius: 8px;
+  }
+
+  .person {
+    max-width: 218px;
+    background-color: var(--gray-color);
+    border-radius: 8px;
+    }
 
   .location {
-    justify-content: start;
-    grid-column: span 2;
+    background-color: var(--gray-color);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-radius: 8px;
+    padding-right: 40px;
+  }
+
+  .location-input {
+    @extend .input-fonts-border;
+    flex: 1;
+
+
+
+  }
+
+  input {
+    //border: none;
+    background-color: var(--gray-color);
   }
 
   .image-box {
@@ -85,10 +119,6 @@ header {
   .small-images {
     flex-direction: column;
   }
-
-  // .main-img {
-  //   flex-basis: 90%;
-  // }
 }
 
 #best-hotels {

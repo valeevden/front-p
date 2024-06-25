@@ -19,6 +19,10 @@ $font-gray-color: rgb(85, 85, 85);
   justify-content: space-between;
 }
 
+.just-flex {
+  display: flex;
+}
+
 .cut-border {
   border-radius: 8px;
   border-width: 1px;
