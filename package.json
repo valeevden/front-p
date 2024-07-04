@@ -1,0 +1,14 @@
+{
+  "name": "front-p",
+  "version": "1.0.0",
+  "description": "hotels-test",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ahls",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.5.3"
+  }
+}

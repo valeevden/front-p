@@ -1,2 +1,5 @@
-main.css
-main.css.map
+*.css
+*.css.map
+*.js
+
+node_modules/

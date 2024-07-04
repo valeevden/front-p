@@ -17,5 +17,3 @@ function printCatInfo(cat) {
 }
 
 printCatInfo(cat);
-
-const cat
